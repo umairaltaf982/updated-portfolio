@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/Header.css'; // optional, if you're using separate CSS
+import '../css/Header.css'; // optional, if you're using separate CSS
 import ResumeModal from './ResumeModal';
 import { useState } from 'react';
 

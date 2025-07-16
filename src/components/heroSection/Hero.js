@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import GitHubStats from './GitHubStats';
-import './css/Hero.css';
+import '../css/Hero.css';
 import { ReactTyped } from 'react-typed';
 import ReactDOM from 'react-dom';
 
