@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import GitHubStats from './GitHubStats';
 import './css/Hero.css';
 import { ReactTyped } from 'react-typed';
 import ReactDOM from 'react-dom';
@@ -49,6 +50,8 @@ const Hero = () => {
                     <button className="learn-more-btn" onClick={() => setShowModal(true)}>
                         Learn More &gt;
                     </button>
+                    <GitHubStats />
+
                 </div>
                 <div className="image-container">
                     <img src="/img/portfolio_img.jpg" alt="Umair" />

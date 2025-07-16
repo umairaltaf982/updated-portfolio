@@ -4,6 +4,7 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Skills from './components/Skills';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Skills />
     </>
   );
 }
