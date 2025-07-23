@@ -9,7 +9,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
         <h2 className="resume-heading">My Resume</h2>
         
         <iframe
-          src="https://drive.google.com/viewerng/viewer?embedded=true&url=${window.location.origin}/Hands_On_Machine_Learning_with_Scikit_Learn_and_TensorFlow.pdf"
+          src={`https://drive.google.com/viewerng/viewer?embedded=true&url=${window.location.origin}/Hands_On_Machine_Learning_with_Scikit_Learn_and_TensorFlow.pdf`}
           title="My Resume"
           width="100%"
           height="500px"

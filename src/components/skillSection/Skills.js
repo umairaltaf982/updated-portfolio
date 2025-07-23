@@ -45,22 +45,18 @@ const getVisibleCount = (width) => {
 
 const Skills = () => {
     const [showMore, setShowMore] = useState(false);
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [visibleCount, setVisibleCount] = useState(getVisibleCount(window.innerWidth));
     const visibleSkills = mainSkills.slice(0, visibleCount);
     const hiddenSkills = mainSkills.slice(visibleCount);
-
-
 
     useEffect(() => {
         AOS.init({ duration: 800 });
     }, []);
 
-
     useEffect(() => {
         const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-            setVisibleCount(getVisibleCount(window.innerWidth));
+            const newWidth = window.innerWidth;
+            setVisibleCount(getVisibleCount(newWidth));
         };
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
