@@ -8,7 +8,6 @@ import ExperienceSection from './components/experienceSection/Experience';
 import About from "./components/aboutSection/About";
 import Blog from "./components/blogSection/Blog";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { createRequire } from 'module';
 
 const require = createRequire(import.meta.url);
 
