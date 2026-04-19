@@ -9,8 +9,6 @@ import About from "./components/aboutSection/About";
 import Blog from "./components/blogSection/Blog";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-const require = createRequire(import.meta.url);
-
 function App() {
   return (
     <>
